@@ -1,8 +1,72 @@
+*,
+::after
+::before{ 
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     scroll-behavior: smooth;
+    }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Lobster&display=swap'); 
+
+:root {
+    --orange : #ff6944;
+    --gris : #e6e6e6;
+    --categorie : #B197FC;
+    --temps :#63E6BE ;
+    --difficulte : #74C0FC;
+    --orangeDark :  #fcc0b1;
+    --grisDark:#3b3b3b;
+    --font1 : "Croissant one";
+    --font2 :"Lobster";
+    }
+
+
+
+header{
+display: flex;
+margin: 1em;
+padding: 1em ;
+justify-content: space-between;
+align-items: center;
+border: #a5a1a1 solid 0.2rem;
+font-size: xx-large;
+position: relative
+}
+
+header.fixed {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+header nav a{
+  text-decoration: none;
+  transition: color 0.5s;
+  padding: 2.5rem;
+}
+
+body{
+  background-color: var(--gris);
+  padding-top: 3em;
+}
+
+h1{
+  display: none;
+}
+#logo{
+  width: 15rem;
+}
+
 .material-symbols-outlined{
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
-  'opsz' 24
+  'opsz' 24;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
-
