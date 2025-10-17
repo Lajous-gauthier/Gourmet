@@ -1,14 +1,151 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> A-propos - GourmeTech</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    
+    <header>
+        <img src="assets/icons/logo_gourmetech.jpg" alt="logo gourmeTech" />
+        <h1>GourmeTech</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="recette.html">Ajouter une recette</a>
+            <a href="favoris.html">Mes favoris</a>
+            <a href="#a-propos">À propos</a>
+        </nav>
+        <button class="material-symbols-outlined">dark_mode</button>
+    </header>
+
+    <main id="a-propos">
+        <!-- section a-propos -->
+        <section class="section">
+            <h2>À propos de nous</h2>
+            <p style="font-size: 1.1em; margin-bottom: 20px;">
+                Bienvenue sur <strong>GourmeTech</strong>, votre destination incontournable pour découvrir,
+                partager et savourer des milliers de recettes délicieuses ! Comme Marmiton, nous croyons que la cuisine
+                doit être accessible à tous, des débutants aux chefs expérimentés.
+            </p>
+
+            <div class="about-content">
+                <div class="feature">
+                    <h3>📚 Des milliers de recettes</h3>
+                    <p>Explorez notre vaste collection de recettes pour tous les goûts : entrées, plats, desserts, et
+                        bien
+                        plus
+                        encore.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>👥 Communauté active</h3>
+                    <p>Partagez vos créations, notez les recettes et échangez des astuces avec d'autres passionnés de
+                        cuisine.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h3>⏱️ Recherche intelligente</h3>
+                    <p>Trouvez rapidement la recette idéale grâce à nos filtres par temps de préparation, difficulté et
+                        ingrédients.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>📱 Accessible partout</h3>
+                    <p>Cuisinez où vous voulez avec notre site adapté à tous les appareils : mobile, tablette et
+                        ordinateur.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulaire de contact -->
+        <section class="section">
+            <h2>Contactez-nous</h2>
+            <p class="success-message" id="successMessage">
+                ✓ Votre message a été envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.
+            </p>
+
+            <form id="contactForm">
+                <fieldset class="form-group">
+                    <label for="name">Nom complet *</label>
+                    <input type="text" id="name" name="name" placeholder="Jean Dupont" required>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="jean.dupont@exemple.fr" required>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <label for="subject">Sujet *</label>
+                    <input type="text" id="subject" name="subject" placeholder="Question sur une recette" required>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Votre message ici..."></textarea>
+                </fieldset>
+
+                <button type="submit"><span class="material-symbols-outlined">
+                        send
+                    </span></button>
+            </form>
+        </section>
+
+        <!-- FAQ Accordéon -->
+        <section class="faq section">
+            <h2>Questions Fréquentes</h2>
+
+            <details class="faq-item">
+                <summary class="faq-question">Proposer mes recettes, c'est possible ?</summary>
+                <div class="faq-answer-content">
+                    Oui ! cliquez sur "Ajouter une recette". Remplissez les infos
+                    (ingrédients, étapes, temps) et ajoutez des photos. Votre recette sera visible après modération.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">Chercher une recette spécifique, comment faire ?</summary>
+                <div class="faq-answer-content">
+                    Utilisez la barre de recherche en haut : tapez un ingrédient ou un nom de recette.
+                    Affinez avec les filtres : temps de préparation, difficulté, categorie.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">Le site est-il payant ?</summary>
+                <div class="faq-answer-content">
+                    Non, le site est entièrement gratuit ! Consultez toutes les recettes, créez un compte, publiez vos
+                    recettes et interagissez sans aucun frais.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">Sauvegarder mes recettes préférées ?</summary>
+                <div class="faq-answer-content">
+                    Oui ! Connectez-vous et cliquez sur l'icône "❤️" ou "Favoris" sur une recette. Elle sera ajoutée à
+                    votre liste, accessible depuis votre profil. Organisez vos favoris en collections !
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">Signaler un problème ou une erreur ?</summary>
+                <div class="faq-answer-content">
+                    Un problème technique ou une erreur dans une recette ? contactez-nous via le formulaire de contact. Notre équipe vous répondra vite.
+                </div>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 GourmeTech - Tous droits réservés.</p>
+    </footer>
+
 </body>
+
 </html>
