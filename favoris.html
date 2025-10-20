@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes Favoris - GourmeTech</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link rel="stylesheet" href="css/styleFavorite.css">
+    <link rel="stylesheet" href="css/favorite.css">
 </head>
 
 <body>
 
     <header>
-        <img src="assets/icons/logo_gourmetech.jpg" alt="logo gourmeTech" />
+        <img src="assets/images/logo_gourmetech.jpg" alt="logo gourmeTech" id="logo"/>
         <nav>
             <a href="index.html">Accueil</a>
             <a href="recette.html">Ajouter une recette</a>
@@ -28,11 +28,11 @@
 
         <div id="favoritesContainer" class="favorites-grid"></div>
 
-        <p id="noFavorites" class="empty-state">vous n'avez pas de favoris vous pouvez en ajouter </p>
+        <p id="noFavorites" class="empty-state">Vous n'avez pas de favoris vous pouvez en ajouter </p>
 
     </main>
-
-    <!--état vide-->
+<!--partie cacher (js)
+ <!-état vide->
     <section class="empty-state">
         <span class="material-symbols-outlined">
             favorite
@@ -42,9 +42,9 @@
         <a href="index.html">Découvrir les recettes</a>
     </section>
 
-    <!--carte fav-->
+    <!carte fav>
     <section class="card">
-        <img src="" alt="Image recette" />
+        <img src="assets/images/gateau_chocolat.jpg" alt="Image recette" />
         <div class="card-content">
             <h3>Nom de la recette</h3>
             <p>Description de la recette</p>
@@ -58,7 +58,7 @@
                 <div>
                     📊 DIFFICULTE
                 </div>
-            </div>
+            </div>- 
             <div>
                 <button>
                     Voir la recette
@@ -69,6 +69,7 @@
             </div>
         </div>
     </section>
+    -->
     <footer>
         <p>© 2025 GourmeTech - Tous droits réservés.</p>
     </footer>
