@@ -9,45 +9,60 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Lobster&display=swap'); 
 
-:root {
-    --orange : #ff6944;
-    --gris : #e6e6e6;
-    --categorie : #B197FC;
-    --temps :#63E6BE ;
-    --difficulte : #74C0FC;
-    --orangeDark :  #fcc0b1;
-    --grisDark:#3b3b3b;
-    --font1 : "Croissant one";
-    --font2 :"Lobster";
-    }
-
-
-header{
-display: flex;
-margin: 1em;
-padding: 1em ;
-justify-content: space-between;
-align-items: center;
-border: #a5a1a1 solid 0.2rem;
-font-size: xx-large;
-position: sticky;
-top: 0;
-left: 0;
-z-index: 1000;
-background-color: #e6e6e6;
-font-family: "Croissant one";
-margin-top: 0;
+ :root {
+  --grey-light: #e6e6e6;
+  --white-light: #fff;
+  --black-light: #222;
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --orange: #e06b1a;
+  --remove-btn-orange: #c55a12;
+  --text-grey: #888;
+  --black-dark: #1a1a1a;
+  --text-color-dark: #f5f5f5;
+  --gris-dark: #2b2b2b;
+  --shadow-dark: rgba(0, 0, 0, 0.6);
 }
+
+
+html[data-theme="light"] {
+  --bg-color: var(--white-light);
+  --text-color: var(--black-light);
+  --card-bg: var(--white-light);
+  --shadow-color: var(--shadow-light);
+}
+
+html[data-theme="dark"] {
+  --bg-color: var(--black-dark);
+  --text-color: var(--text-color-dark);
+  --card-bg: var(--gris-dark);
+  --shadow-color: var(--shadow-dark);
+}
+
+
 
 body{
-  background-color: var(--gris);
-  padding-top: 3em;
+  background-color: var(--grey-light);
   font-family: "Lobster";
-  font-size: x-large;
-  margin: 5rem;
-  margin-top: 0;
+  font-size: 1rem;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--card-bg);
+  box-shadow: 0 2px 6px var(--shadow-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--white-light);
+}
+
+
+header nav {
+  display: flex;
+}
 
 header nav a{
   text-decoration: none;
@@ -63,8 +78,13 @@ h2,h3,legend{
   font-family: "croissant one";
 }
 
+input,button,textarea{
+  font-size: inherit;
+}
+
 #logo{
   width: 15rem;
+  border-radius: 2rem;
 }
 
 #rechercheForm {
@@ -72,10 +92,12 @@ h2,h3,legend{
   grid-template-columns: 1fr auto; 
   gap: 1rem;
   align-items: center;
-  background-color:rgb(211, 206, 206);
+  background-color:var(--grey-light);
   margin: 5rem;
   margin-top: 0;
   padding: 2rem;
+  box-shadow: 0 2px 6px var(--shadow-color);
+
 }
 
 .filters {
@@ -91,7 +113,7 @@ h2,h3,legend{
   flex-direction: column; 
   gap: 1rem;
   max-width: 50%;
-  background-color:rgb(189, 180, 180);
+  background-color:var(--grey-light);
   border: none;
 }
 
@@ -148,18 +170,25 @@ h2,h3,legend{
 }
 
 .categorie{
-  background-color: var(--categorie);
+  background-color: rgb(55, 140, 161);
   border-radius: 10%;
 }
 
 .time{
-  background-color: var(--temps);
+  background-color: rgb(93, 182, 93);
     border-radius: 10%;
 }
 
 .niveau{
-  background-color: var(--difficulte);
+  background-color: rgb(206, 130, 206);
     border-radius: 10%;
+}
+
+#navApropos{
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 #piedDePage{
@@ -180,3 +209,5 @@ h2,h3,legend{
   height: 3rem;
   border-radius: 50%;
 }
+
+
