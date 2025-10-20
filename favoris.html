@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes Favoris - GourmeTech</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
 </head>
 
 <body>
@@ -20,16 +20,16 @@
             <a href="#favoris">Mes favoris</a>
             <a href="a-propos.html">À propos</a>
         </nav>
-        <button class="material-symbols-outlined">dark_mode</button>
+        <button id="themeToggle" class="material-symbols-outlined theme-toggle">dark_mode</button>
     </header>
 
 
     <main id="favoris">
-        <h2>💜 Mes Recettes Favorites</h2>
+        <h2 class="page-title">💜 Mes Recettes Favorites</h2>
 
-        <div id="favoritesContainer"></div>
+        <div id="favoritesContainer" class="favorites-grid"></div>
 
-        <p id="noFavorites">vous n'avez pas de favoris vous pouvez en ajouter </p>
+        <p id="noFavorites" class="empty-state">vous n'avez pas de favoris vous pouvez en ajouter </p>
 
     </main>
 
@@ -70,7 +70,7 @@
     <footer>
         <p>© 2025 GourmeTech - Tous droits réservés.</p>
     </footer>
-
+<script src="js/script.js"></script>
 </body>
 
 </html>
