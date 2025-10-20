@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GourmeTech</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
   </head>
 
   <body>
     <header>
       <img src="assets/images/logo_gourmetech.jpg" alt="logo gourmeTech" id="logo"/>
-
       <nav>
         <a href="#rechercheForm">Accueil</a>
         <a href="recette.html">Recettes</a>
         <a href="favoris.html">Mes favoris</a>
         <a href="a-propos.html">À propos</a>
       </nav>
-      <button class="material-symbols-outlined">dark_mode</button>
+      <button class="material-symbols-outlined" id="theme-toggle">dark_mode</button>
     </header>
 
     <main>
@@ -101,7 +100,7 @@
         </article>
       </section>
     </main>
-    <footer>
+      <section id="navApropos">
       <nav>
         <ul>
           <h3>Navigation</h3>
@@ -117,8 +116,11 @@
           GourmeTech est une plateforme de recettes culinaires interactive
           développée dans le cadre d'un projet pédagogique.
         </p>
-      </div>
+        </div>
+    </section>
+       <footer>
       <p id="piedDePage">© 2025 GourmeTech - Tous droits réservés.</p>
     </footer>
+    <script src="/js/script.js"></script>
   </body>
 </html>
