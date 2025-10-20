@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes Favoris - GourmeTech</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/styleFavorite.css">
 </head>
 
 <body>
 
     <header>
         <img src="assets/icons/logo_gourmetech.jpg" alt="logo gourmeTech" />
-        <h1>GourmeTech</h1>
         <nav>
             <a href="index.html">Accueil</a>
             <a href="recette.html">Ajouter une recette</a>
@@ -25,7 +24,7 @@
 
 
     <main id="favoris">
-        <h2 class="page-title">💜 Mes Recettes Favorites</h2>
+        <h1 class="page-title">💜 Mes Recettes Favorites</h1>
 
         <div id="favoritesContainer" class="favorites-grid"></div>
 
@@ -33,40 +32,43 @@
 
     </main>
 
-    <!--    
-    <section>
+    <!--état vide-->
+    <section class="empty-state">
         <span class="material-symbols-outlined">
             favorite
         </span>
         <h2>Aucun favori pour le moment</h2>
         <p>Commencez à ajouter vos recettes préférées pour les retrouver facilement ici !</p>
-        <a>Découvrir les recettes</a>
+        <a href="index.html">Découvrir les recettes</a>
     </section>
 
-    <section>
-        <h3></h3>
-        <p> </p>
-        <div>
+    <!--carte fav-->
+    <section class="card">
+        <img src="" alt="Image recette" />
+        <div class="card-content">
+            <h3>Nom de la recette</h3>
+            <p>Description de la recette</p>
             <div>
-                🍰 CATEGORIE
+                <div>
+                    🍰 CATEGORIE
+                </div>
+                <div>
+                    ⏱️ TIME
+                </div>
+                <div>
+                    📊 DIFFICULTE
+                </div>
             </div>
             <div>
-                ⏱️ TIME
-            </div>
-            <div>
-                📊 DIFFICULTE
+                <button>
+                    Voir la recette
+                </button>
+                <button class="remove-btn">
+                    🗑️ SUPPRIMER
+                </button>
             </div>
         </div>
-        <div>
-            <button>
-                Voir la recette
-            </button>
-            <button>
-                🗑️ SUPRIMER
-            </button>
-        </div>
-
-    </section> -->
+    </section>
     <footer>
         <p>© 2025 GourmeTech - Tous droits réservés.</p>
     </footer>
