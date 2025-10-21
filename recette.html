@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recettes - GourmeTech</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/recette.css">
 </head>
 <body>
      <header>
@@ -16,31 +16,48 @@
         <a href="favoris.html">Mes favoris</a>
         <a href="a-propos.html">À propos</a>
       </nav>
-      <button class="material-symbols-outlined">dark_mode</button>
+      <button class="material-symbols-outlined" id="themeToggle">dark_mode</button>
     </header>
 
     <main>
+        <article class="recette">
+
         <h1>GourmeTech</h1>
         <h2>Gâteau au chocolat</h2>
-        <img src="assets/images/gateau_chocolat.jpg" alt="Fondant au chocolat ">
-        <span class="material-symbols-outlined">favorite</span>
+       <div class="imageEtFav">
+          <img src="assets/images/gateau_chocolat.jpg" alt="photo d'un gateaux au chocolats" />
+          <span class="material-symbols-outlined">favorite</span>
+          </div>
 
-        <ul id="ingredients">
-           <h3>Liste des ingrédients : </h3>
-            <li class="ingredients">200g de chocolat</li>
-            <img src="assets/images/chocolat.png" alt="">
-            <li class="ingredients">100g de beurre</li>
-            <img src="assets/images/beurre.webp" alt="">
-            <li class="ingredients">50g de farine</li>
-            <img src="assets/images/farine.webp" alt="">
-            <li class="ingredients">100g de sucre</li>
-            <img src="assets/images/sucre.png" alt="">
-            <li class="ingredients">3 oeufs</li>
-            <img src="assets/images/oeuf.webp" alt="">
-        </ul>
+           <div class="infos">
+            <span class="categorie">Dessert </span>
+            <span class="time">45 min </span>
+            <span class="niveau">Facile </span>
+          </div>
 
+<section id="ingredients">
+  <h3>Liste des ingrédients :</h3>
+  <ul>
+    <li>
+      <img src="assets/images/chocolat.webp" alt="photo de chocolat">200g de chocolat
+    </li>
+    <li>
+      <img src="assets/images/beurre.webp" alt="photo de beurre">100g de beurre
+    </li>
+    <li>
+      <img src="assets/images/farine.webp" alt="photo de farine">50g de farine
+    </li>
+    <li>
+      <img src="assets/images/sucre.png" alt="photo de sucre">100g de sucre
+    </li>
+    <li>
+      <img src="assets/images/oeuf.webp" alt="photo d'oeuf">3 oeufs
+    </li>
+  </ul>
+</section>
+
+        <h3>Préparation :</h3>
         <ol id="etape">
-            <h3>Préparation :</h3>
             <li class="etapes">Préchauffez votre four à 180°C (thermostat 6). Dans une casserole, faites fondre le chocolat et le beurre coupé en morceaux à feu très doux.</li>
             <li class="etapes">Dans un saladier, ajoutez le sucre, les oeufs, la farine. Mélangez.</li>
             <li class="etapes">Ajoutez le mélange chocolat/beurre. Mélangez bien.</li>
@@ -49,17 +66,20 @@
             <li class="etapes">A la sortie du four le gâteau ne paraît pas assez cuit. C'est normal, laissez-le refroidir puis démoulez- le.</li>
         </ol>
         
-        <h2>Recettes similaires</h2>
+        <section id="similaires">
+        <h3>Recettes similaires</h3>
         <ul>
             <li>Moelleux au chocolat</li>
             <li>Muffin au chocolat</li>
             <li>Cake au chocolat</li>
         </ul>
-
+        </section>
+        </article>
     </main>
 
-    <footer>      
+    <footer id="piedDePage">      
         <p>© 2025 GourmeTech - Tous droits réservés.</p>
     </footer>
+    <script src="/js/script.js"></script>
 </body>
 </html>
