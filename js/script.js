@@ -1,45 +1,26 @@
-// Récupération sûre du bouton (id prioritaire, fallback sur la classe)
-let toggleBtn = document.getElementById('themeToggle');
-if (!toggleBtn) {
-  toggleBtn = document.querySelector('.theme-toggle');
-}
+const toggleBtn = document.querySelector("#themeToggle") || document.querySelector(".theme-toggle");
 
-// Si pas de bouton trouvé, on quitte proprement (évite les erreurs)
-if (!toggleBtn) {
-  console.warn('Bouton de thème non trouvé (id="themeToggle" ou .theme-toggle manquant). Le script de thème est désactivé.');
-} else {
-  const htmlEl = document.documentElement;
+if (toggleBtn) {
+  const html = document.documentElement;
+  let theme = localStorage.getItem("theme");
+  if (!theme) theme = "light";
 
-  // Charger le thème sauvegardé ou définir "light" par défaut
-  let currentTheme = localStorage.getItem('theme');
-  if (!currentTheme) {
-    currentTheme = 'light';
-  }
-  htmlEl.setAttribute('data-theme', currentTheme);
-
-  // Mettre à jour l’icône du bouton selon le thème actuel
-  if (currentTheme === 'dark') {
-    toggleBtn.textContent = 'light_mode';
+  html.setAttribute("data-theme", theme);
+  if (theme === "dark") {
+    toggleBtn.textContent = "light_mode";
   } else {
-    toggleBtn.textContent = 'dark_mode';
+    toggleBtn.textContent = "dark_mode";
   }
 
-  // Gestion du clic sur le bouton
-  toggleBtn.addEventListener('click', () => {
-    let newTheme;
-    if (htmlEl.getAttribute('data-theme') === 'light') {
-      newTheme = 'dark';
+  toggleBtn.addEventListener("click", () => {
+    if (theme === "dark") {
+      theme = "light";
+      toggleBtn.textContent = "dark_mode";
     } else {
-      newTheme = 'light';
+      theme = "dark";
+      toggleBtn.textContent = "light_mode";
     }
-
-    htmlEl.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-
-    if (newTheme === 'dark') {
-      toggleBtn.textContent = 'light_mode';
-    } else {
-      toggleBtn.textContent = 'dark_mode';
-    }
+    html.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
   });
 }

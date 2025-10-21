@@ -91,10 +91,25 @@ h2,h3,legend{
 
 a{
   text-decoration: none;
+  color: var(--text-color);
 }
 
-input,button,textarea{
+a:visited {
+  color: var(--text-color);
+}
+
+button{
+    font-size: inherit;
+    color: var(--text-color);
+    text-decoration: none;
+    background-color: var(--bg-color);
+  }
+
+
+input,textarea{
   font-size: inherit;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .filters {
