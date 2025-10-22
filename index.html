@@ -11,7 +11,12 @@
   <body>
     <header>
       <img src="assets/images/logo_gourmetech.jpg" alt="logo gourmeTech" id="logo"/>
-      <nav>
+      <button id="menuToggle" class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+
+    <span class="sr-only">Menu</span>
+    &#9776;
+  </button>
+      <nav id="navLinks">
         <a href="#">Accueil</a>
         <a href="#">Recettes</a>
         <a href="favoris.html">Mes favoris</a>
@@ -25,7 +30,7 @@
       <section>
         <form id="rechercheForm">
           <input type="text" name="recherche" id="recherche" placeholder="Rechercher une recette"/>
-          <input type="submit" name="submit" value="Rechercher" />
+          <input type="submit" name="submit" value="Rechercher" id="rechercheBtn"/>
 
           <div class="filters">
           <fieldset class="filtre">
@@ -122,5 +127,7 @@
       <p id="piedDePage">© 2025 GourmeTech - Tous droits réservés.</p>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/autre_fichiers.js"></script>
+    <script src="js/favoris.js"></script>
   </body>
 </html>
