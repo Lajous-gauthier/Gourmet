@@ -39,7 +39,7 @@ class GestionnaireFavoris {
 
 const gestionFavoris = new GestionnaireFavoris();
 
-// ✅ Fonction notification avec les vrais styles
+//Fonction notification et styles
 function afficherNotification(message) {
   const notif = document.createElement("div");
   notif.className = "notification-favori";
