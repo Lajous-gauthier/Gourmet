@@ -269,7 +269,8 @@ input,textarea{
 }
 
   #rechercheForm {
-    margin: 12rem 8rem 5rem;
+    min-width: 300px;
+    margin: 12rem 8rem 5rem;  
     grid-template-columns: 1fr;
   }
 
