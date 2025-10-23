@@ -102,9 +102,7 @@ main {
   font-weight: 700;
 }
 
-/* ========================================
-   GRILLE DES FAVORIS
-   ======================================== */
+/* grid fav */
 
 .favorites-grid {
   display: grid;
@@ -115,9 +113,7 @@ main {
   margin: 0 auto;
 }
 
-/* ========================================
-   CARTE FAVORITE
-   ======================================== */
+/* carte fav */
 
 .carte-favori {
   background-color: var(--card-bg);
@@ -171,9 +167,7 @@ main {
   font-weight: 600;
 }
 
-/* ========================================
-   INFOS RECETTE (BADGES)
-   ======================================== */
+/* infos recette ( badges ) */
 
 .infos {
   display: flex;
@@ -216,9 +210,7 @@ html[data-theme="dark"] .badge.niveau {
   color: #58d68d;
 }
 
-/* ========================================
-   ACTIONS (BOUTONS)
-   ======================================== */
+/* action btn*/
 
 .actions {
   display: flex;
@@ -285,9 +277,7 @@ html[data-theme="dark"] .badge.niveau {
   font-size: 1.2rem;
 }
 
-/* ========================================
-   ÉTAT VIDE
-   ======================================== */
+/* si vide */
 
 .empty-state {
   text-align: center;
@@ -348,22 +338,15 @@ html[data-theme="dark"] .badge.niveau {
 
 /* Footer */
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   text-align: center;
   padding: 1.5rem;
   background-color: var(--card-bg);
   color: var(--text-grey);
   box-shadow: 0 -2px 6px var(--shadow-color);
-  margin-top: 2rem;
-  height: 4rem;
+  margin-top: auto;
 }
 
-/* ========================================
-   RESPONSIVE
-   ======================================== */
+/* responsive tablette */
 
 @media (max-width: 990px) {
   header {
@@ -440,6 +423,8 @@ footer {
     padding: 1rem;
   }
 }
+
+/* responsive mobile */
 
 @media (max-width: 600px) {
   header {
