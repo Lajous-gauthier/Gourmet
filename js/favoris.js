@@ -147,7 +147,6 @@ document.addEventListener("DOMContentLoaded", () => {
         id, 
         titre: title, 
         image: img,    
-        categorie, 
         temps: times,  
         niveau: level, 
         lien: link     
