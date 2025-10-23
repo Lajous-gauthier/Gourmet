@@ -10,17 +10,21 @@
 </head>
 
 <body>
-    <header>
-         <img src="assets/images/logo_gourmetech.jpg" alt="logo gourmeTech" id="logo"/>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="recette.html">Recettes</a>
-            <a href="favoris.html">Mes favoris</a>
-            <a href="#a-propos">À propos</a>
-        </nav>
-        <button class="material-symbols-outlined theme-toggle" aria-label="Basculer le mode clair/sombre" aria-pressed="false">dark_mode</button>
-    </header>
+<header>
+      <img src="assets/images/logo_gourmetech.jpg" alt="logo gourmeTech" id="logo"/>
+      <button id="menuToggle" class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
 
+    <span class="sr-only"></span>
+    &#9776;
+  </button>
+      <nav id="navLinks">
+        <a href="index.html">Accueil</a>
+        <a href="#">Recettes</a>
+        <a href="favoris.html">Mes favoris</a>
+        <a href="a-propos.html">À propos</a>
+      </nav>
+      <button class="material-symbols-outlined" id="themeToggle" aria-label="Basculer le mode clair/sombre" aria-pressed="false">dark_mode</button>
+    </header>
     <main id="a-propos">
         <!-- section a-propos -->
         <section class="section">
@@ -120,7 +124,8 @@
             <details class="faq-item">
                 <summary class="faq-question">Signaler un problème ou une erreur ?</summary>
                 <div class="faq-answer-content">
-                    Un problème technique ou une erreur dans une recette ? contactez-nous via le formulaire de contact. Notre équipe vous répondra vite.
+                    Un problème technique ou une erreur dans une recette ? contactez-nous via le formulaire de contact.
+                    Notre équipe vous répondra vite.
                 </div>
             </details>
         </section>
@@ -129,7 +134,9 @@
     <footer>
         <p>© 2025 GourmeTech - Tous droits réservés.</p>
     </footer>
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/autre_fichiers.js"></script>
+    <script src="js/favoris.js"></script>
 </body>
 
 </html>
