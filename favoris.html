@@ -10,16 +10,20 @@
 </head>
 
 <body>
+   <header>
+      <img src="assets/images/logo_gourmetech.jpg" alt="logo gourmeTech" id="logo"/>
+      <button id="menuToggle" class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
 
-    <header>
-        <img src="assets/images/logo_gourmetech.jpg" alt="logo gourmeTech" id="logo"/>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="recette.html">Recettes</a>
-            <a href="#favoris">Mes favoris</a>
-            <a href="a-propos.html">À propos</a>
-        </nav>
-        <button id="themeToggle" class="material-symbols-outlined theme-toggle" aria-label="Basculer le mode clair/sombre" aria-pressed="false">dark_mode</button>
+    <span class="sr-only"></span>
+    &#9776;
+  </button>
+      <nav id="navLinks">
+        <a href="index.html">Accueil</a>
+        <a href="#">Recettes</a>
+        <a href="favoris.html">Mes favoris</a>
+        <a href="a-propos.html">À propos</a>
+      </nav>
+      <button class="material-symbols-outlined" id="themeToggle" aria-label="Basculer le mode clair/sombre" aria-pressed="false">dark_mode</button>
     </header>
 
 
@@ -31,7 +35,7 @@
         <p id="noFavorites" class="empty-state">Vous n'avez pas de favoris vous pouvez en ajouter </p>
 
     </main>
-<!--partie cacher (js)
+    <!--partie cacher (js)
  <!-état vide->
     <section class="empty-state">
         <span class="material-symbols-outlined">
@@ -73,8 +77,9 @@
     <footer>
         <p>© 2025 GourmeTech - Tous droits réservés.</p>
     </footer>
-<script src="js/script.js"></script>
-<script src="js/favoris.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/autre_fichiers.js"></script>
+    <script src="js/favoris.js"></script>
 </body>
 
 </html>
