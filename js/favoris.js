@@ -155,9 +155,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       function majButton() {
         if (gestionFavoris.estFavori(id)) {
-          button.style.color = "#e74c3c";
+          button.style.color = "#f8000cff";
         } else {
-          button.style.color = "#95a5a6";
+          button.style.color = "#000";
         }
       }
       
