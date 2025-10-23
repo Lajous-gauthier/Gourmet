@@ -15,21 +15,4 @@
   }));
 
 
-//section barre de recherche
 
-const search = document.getElementById("recherche")
-const cartes = document.querySelectorAll(".carte")
-
-search.addEventListener("keyup", ()=>{
-  const value = search.value.toLowerCase();
-
-  cartes.forEach(carte=>{
-    const name = carte.dataset.title.toLowerCase();
-
-    if(name.includes(value)){
-      carte.style.display = "block"
-    } else {
-      carte.style.display = "none"
-    }
-  })
-})
