@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/recette.css">
+</head>
+
+<body>
+
+    <header>
+      <img src="assets/images/logo_gourmetech.jpg" alt="logo gourmeTech" id="logo"/>
+      <button id="menuToggle" class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+
+    <span class="sr-only"></span>
+    &#9776;
+  </button>
+      <nav id="navLinks">
+        <a href="#">Accueil</a>
+        <a href="#">Recettes</a>
+        <a href="favoris.html">Mes favoris</a>
+        <a href="a-propos.html">À propos</a>
+      </nav>
+      <button class="material-symbols-outlined" id="themeToggle" aria-label="Basculer le mode clair/sombre" aria-pressed="false">dark_mode</button>
+    </header>
+
+    <main>
+
+       <h1>Générer une recette aléatoire</h1>
+       <button id="generate">Appuyez ici</button>
+        <div>
+          <h2 id="titrerecette"></h2>
+          <img src="" alt="photo de recette" id="randomImg">
+          <p id="caterogie"></p>
+          <p id="origine"></p>
+          
+        </div>
+
+
+    </main>
+    
+
+       <footer>
+      <p id="piedDePage">© 2025 GourmeTech - Tous droits réservés.</p>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script src="/js/autre_fichiers.js"></script>
+    <script src="js/favoris.js"></script>
+    <script src="js/generate.js"></script>
+</body>
+
+</html>
