@@ -28,24 +28,22 @@ if (toggleBtn) {
 }
 
 
-//section barre de recherche
+ // menu burger telephone
+ 
+ const btn = document.getElementById('menuToggle');
+  const nav = document.getElementById('navLinks');
 
-const search = document.getElementById("recherche")
-const cartes = document.querySelectorAll(".carte")
+  btn.addEventListener('click', () => {
+    const opened = nav.classList.toggle('active'); // ajoute/supprime .active
+    btn.setAttribute('aria-expanded', opened ? 'true' : 'false');
+  });
 
-search.addEventListener("keyup", ()=>{
-  const value = search.value.toLowerCase();
 
-  cartes.forEach(carte=>{
-    const name = carte.dataset.title.toLowerCase();
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('active');
+    btn.setAttribute('aria-expanded', 'false');
+  }));
 
-    if(name.includes(value)){
-      carte.style.display = "block"
-    } else {
-      carte.style.display = "none"
-    }
-  })
-})
 
 
 

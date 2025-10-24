@@ -95,12 +95,8 @@ header nav a:hover {
   background-color: #fff;
   border-radius: 2rem;
   width: 15rem;
-  transition: transform 0.3s;
 }
 
-#logo:hover {
-  transform: scale(1.05);
-}
 
 #themeToggle {
   cursor: pointer;
@@ -108,12 +104,9 @@ header nav a:hover {
   background: none;
   border: none;
   color: var(--text-color);
-  transition: transform 0.3s;
 }
 
-#themeToggle:hover {
-  transform: rotate(180deg);
-}
+
 
 /* Burger menu */
 .burger {
@@ -264,7 +257,7 @@ footer p {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .burger {
     display: block;
   }
@@ -323,7 +316,7 @@ footer p {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   body {
     padding-top: 4rem;
   }

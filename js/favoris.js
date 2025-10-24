@@ -136,7 +136,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const button = carte.querySelector(".material-symbols-outlined");
       const title = carte.querySelector("h2").textContent.trim();
       const img = carte.querySelector("img").src;
-      const categorie = carte.querySelector(".categorie").textContent.trim();
       const times = carte.querySelector(".time").textContent.trim();
       const level = carte.querySelector(".niveau").textContent.trim();
       const link = carte.querySelector(".voir-recette").href;  
