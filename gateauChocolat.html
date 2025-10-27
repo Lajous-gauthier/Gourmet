@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recettes - GourmeTech</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="css/recette.css">
+</head>
+<body>
+    <header>
+      <img src="assets/images/logo_gourmetech.jpg" alt="logo gourmeTech" id="logo"/>
+      <button id="menuToggle" class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+
+    <span class="sr-only"></span>
+    &#9776;
+  </button>
+      <nav id="navLinks">
+        <a href="index.html">Accueil</a>
+        <a href="random.html">Recette Aléatoire</a>
+        <a href="favoris.html">Mes favoris</a>
+        <a href="a-propos.html">À propos</a>
+      </nav>
+      <button class="material-symbols-outlined" id="themeToggle" aria-label="Basculer le mode clair/sombre" aria-pressed="false">dark_mode</button>
+    </header>
+
+    <main>
+        <article class="recette" aria-labelledby="titreRecette">
+
+        <h1>GourmeTech</h1>
+        <h2>Gâteau au chocolat</h2>
+       <div class="imageEtFav">
+          <img src="assets/images/gateau_chocolat.jpg" alt="photo d'un gateaux au chocolats" />
+          </div>
+
+           <div class="infos">
+            <span class="categorie">Dessert </span>
+            <span class="time">25 min </span>
+            <span class="niveau">Facile </span>
+          </div>
+
+<section id="ingredients" aria-labelledby="titreIngredients" >
+  <h3>Liste des ingrédients :</h3>
+  <ul>
+    <li>
+      <img src="assets/images/chocolat.webp" alt="photo de chocolat">200g de chocolat
+    </li>
+    <li>
+      <img src="assets/images/beurre.webp" alt="photo de beurre">100g de beurre
+    </li>
+    <li>
+      <img src="assets/images/farine.webp" alt="photo de farine">50g de farine
+    </li>
+    <li>
+      <img src="assets/images/sucre.png" alt="photo de sucre">100g de sucre
+    </li>
+    <li>
+      <img src="assets/images/oeuf.webp" alt="photo d'oeuf">3 oeufs
+    </li>
+  </ul>
+</section>
+ <section aria-labelledby="titrePreparation">
+        <h3>Préparation :</h3>
+        <ol id="etape">
+            <li class="etapes">Préchauffez votre four à 180°C (thermostat 6). Dans une casserole, faites fondre le chocolat et le beurre coupé en morceaux à feu très doux.</li>
+            <li class="etapes">Dans un saladier, ajoutez le sucre, les oeufs, la farine. Mélangez.</li>
+            <li class="etapes">Ajoutez le mélange chocolat/beurre. Mélangez bien.</li>
+            <li class="etapes">Beurrez à l'aide d'une feuille de papier essuie-tout et farinez votre moule puis y versez la pâte à gâteau.</li>
+            <li class="etapes">Faites cuire au four environ 20 minutes.</li>
+            <li class="etapes">A la sortie du four le gâteau ne paraît pas assez cuit. C'est normal, laissez-le refroidir puis démoulez- le.</li>
+        </ol>
+        </section>
+        <section id="similaires" aria-labelledby="titreSimilaires">
+        <h3>Recettes similaires</h3>
+        <ul>
+            <li>Moelleux au chocolat</li>
+            <li>Muffin au chocolat</li>
+            <li>Cake au chocolat</li>
+        </ul>
+        </section>
+        </article>
+    </main>
+
+    <footer id="piedDePage">      
+        <p>© 2025 GourmeTech - Tous droits réservés.</p>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>

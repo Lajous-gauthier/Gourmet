@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Favoris - GourmeTech</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="css/favorite.css">
+</head>
+
+<body>
+   <header>
+      <img src="assets/images/logo_gourmetech.jpg" alt="logo gourmeTech" id="logo"/>
+      <button id="menuToggle" class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+
+    <span class="sr-only"></span>
+    &#9776;
+  </button>
+      <nav id="navLinks">
+        <a href="index.html">Accueil</a>
+        <a href="random.html">Recette Aléatoire</a>
+        <a href="favoris.html">Mes favoris</a>
+        <a href="a-propos.html">À propos</a>
+      </nav>
+      <button class="material-symbols-outlined" id="themeToggle" aria-label="Basculer le mode clair/sombre" aria-pressed="false">dark_mode</button>
+    </header>
+
+
+    <main id="favoris">
+        <h1 class="page-title">💜 Mes Recettes Favorites</h1>
+
+        <div id="favoritesContainer" class="favorites-grid"></div>
+
+        <p id="noFavorites" class="empty-state">Vous n'avez pas de favoris vous pouvez en ajouter </p>
+
+    </main>
+    <!--partie cacher (js)
+ <!-état vide->
+    <section class="empty-state">
+        <span class="material-symbols-outlined">
+            favorite
+        </span>
+        <h2>Aucun favori pour le moment</h2>
+        <p>Commencez à ajouter vos recettes préférées pour les retrouver facilement ici !</p>
+        <a href="index.html">Découvrir les recettes</a>
+    </section>
+
+    <!carte fav>
+    <section class="card">
+        <img src="assets/images/gateau_chocolat.jpg" alt="Image recette" />
+        <div class="card-content">
+            <h3>Nom de la recette</h3>
+            <p>Description de la recette</p>
+            <div>
+                <div>
+                    🍰 CATEGORIE
+                </div>
+                <div>
+                    ⏱️ TIME
+                </div>
+                <div>
+                    📊 DIFFICULTE
+                </div>
+            </div>- 
+            <div>
+                <button>
+                    Voir la recette
+                </button>
+                <button class="remove-btn">
+                    🗑️ SUPPRIMER
+                </button>
+            </div>
+        </div>
+    </section>
+    -->
+    <footer>
+        <p>© 2025 GourmeTech - Tous droits réservés.</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/favoris.js"></script>
+</body>
+
+</html>

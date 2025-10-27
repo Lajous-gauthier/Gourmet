@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GourmeTech</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+
+  <body>
+    <header>
+      <img src="assets/images/logo_gourmetech.jpg" alt="logo gourmeTech" id="logo"/>
+      <button id="menuToggle" class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+
+    <span class="sr-only"></span>
+    &#9776;
+  </button>
+      <nav id="navLinks">
+        <a href="#">Accueil</a>
+        <a href="random.html">Recette Aléatoire</a>
+        <a href="favoris.html">Mes favoris</a>
+        <a href="a-propos.html">À propos</a>
+      </nav>
+      <button class="material-symbols-outlined" id="themeToggle" aria-label="Basculer le mode clair/sombre" aria-pressed="false">dark_mode</button>
+    </header>
+
+    <main>
+      <h1>GourmeTech</h1>
+      <section>
+        <form id="rechercheForm">
+          <input type="text" name="recherche" id="recherche" placeholder="Rechercher une recette"/>
+          <input type="submit" name="submit" value="Rechercher" id="rechercheBtn"/>
+
+          <div class="filters">
+          <fieldset class="filtre">
+            <legend><strong>Catégorie</strong></legend>
+            <label><input type="checkbox" name="categorie" />Entrée</label>
+            <label><input type="checkbox" name="categorie" />Plat</label>
+            <label><input type="checkbox" name="categorie" />Dessert</label>
+          </fieldset>
+          <fieldset class="filtre">
+            <legend><strong>Temps de préparation</strong></legend>
+            <label
+              ><input type="checkbox" name="time" />Rapide (&lt 30 min)</label>
+            <label
+              ><input type="checkbox" name="time" />Moyen (30-60 min)</label>
+            <label
+              ><input type="checkbox" name="time" />Long (&gt 60 min )</label>
+          </fieldset>
+          <fieldset class="filtre">
+            <legend><strong>Difficulté</strong></legend>
+            <label><input type="checkbox" name="niveau" />Facile</label>
+            <label><input type="checkbox" name="niveau" />Moyen</label>
+            <label><input type="checkbox" name="niveau" />Difficile</label>
+          </fieldset>
+          </div>
+        </form>
+      </section>
+
+      <section id="cartes">
+        <article class="carte" data-title="Gâteau au chocolat" data-categorie="Dessert" data-time="Rapide (&lt 30 min)" data-niveau="Facile">
+            <div class="imageEtFav">
+          <img src="assets/images/gateau_chocolat.jpg" alt="photo d'un gateaux au chocolats" />
+          <span class="material-symbols-outlined" role="button" aria-label="Ajouter aux favoris">favorite</span>
+          </div>
+          <h2>Gâteau au chocolat</h2>
+          <div class="infos">
+            <span class="categorie">Dessert </span>
+            <span class="time">25 min </span>
+            <span class="niveau">Facile </span>
+          </div>
+          <a href="gateauChocolat.html" class="voir-recette" role="button">Voir la recette</a>
+        </article>
+
+        <article class="carte" data-title="Tartiflette" data-categorie="Plat" data-time="Long (&gt 60 min )" data-niveau="Moyen">
+            <div class="imageEtFav">
+          <img src="assets/images/TARTIFLETTE.jpg" alt="photo d'une tartiflette" />
+          <span class="material-symbols-outlined" role="button" aria-label="Ajouter aux favoris">favorite</span>
+            </div>
+          <h2>Tartiflette</h2>
+          <div class="infos">
+            <span class="categorie">Plat </span>
+            <span class="time">1h15</span>
+            <span class="niveau">Moyen </span>
+          </div>
+          <a href="tartiflette.html" class="voir-recette" role="button">Voir la recette</a>
+        </article>
+        <article class="carte" data-title="Cheesecake au chèvre frais et à la truite fumée" data-categorie="Entrée" data-time="Moyen (30-60 min)" data-niveau="Difficile">
+            <div class="imageEtFav">
+          <img src="assets/images/cheesecake.webp"alt="photo d'une Entrée Cheesecake au chèvre frais et à la truite fumée"/>
+          <span class="material-symbols-outlined" role="button" aria-label="Ajouter aux favoris">favorite</span>
+          </div>
+
+          <h2>Cheesecake au chèvre frais et à la truite fumée</h2>
+          <div class="infos">
+            <span class="categorie">Entrée</span>
+            <span class="time">55 min </span>
+            <span class="niveau">Difficile </span>
+          </div>
+          <a href="cheesecake.html" class="voir-recette" role="button">Voir la recette</a>
+        </article>
+      </section>
+    </main>
+      <section id="navApropos">
+      <nav aria-label="Navigation secondaire">
+      <h3>Navigation</h3>
+        <ul>
+          <li><a href="">Acceuil</a></li>
+          <li><a href="recette.html">Recettes</a></li>
+          <li><a href="favoris.html">Mes favoris</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3>À propos de GourmeTech</h3>
+        <p>
+          GourmeTech est une plateforme de recettes culinaires interactive
+          développée dans le cadre d'un projet pédagogique.
+        </p>
+        </div>
+    </section>
+       <footer>
+      <p id="piedDePage">© 2025 GourmeTech - Tous droits réservés.</p>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script src="js/favoris.js"></script>
+    <script src="js/filtres.js"></script>
+  </body>
+</html>

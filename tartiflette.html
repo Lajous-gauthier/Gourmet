@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recettes - GourmeTech</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="css/recette.css">
+</head>
+<body>
+    <header>
+      <img src="assets/images/logo_gourmetech.jpg" alt="logo gourmeTech" id="logo"/>
+      <button id="menuToggle" class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+
+    <span class="sr-only"></span>
+    &#9776;
+  </button>
+      <nav id="navLinks">
+        <a href="index.html">Accueil</a>
+        <a href="random.html">Recette Aléatoire</a>
+        <a href="favoris.html">Mes favoris</a>
+        <a href="a-propos.html">À propos</a>
+      </nav>
+      <button class="material-symbols-outlined" id="themeToggle" aria-label="Basculer le mode clair/sombre" aria-pressed="false">dark_mode</button>
+    </header>
+    <main>
+        <article class="recette" aria-labelledby="titreRecette">
+
+        <h1>GourmeTech</h1>
+        <h2>Tartiflette</h2>
+       <div class="imageEtFav">
+          <img src="assets/images/TARTIFLETTE.jpg" alt="photo d'une tartiflette" />
+        </div>
+
+        <div class="infos">
+            <span class="categorie">Plat </span>
+            <span class="time">60 min </span>
+            <span class="niveau">Moyen </span>
+        </div>
+
+<section id="ingredients" aria-labelledby="titreIngredients">
+  <h3>Liste des ingrédients :</h3>
+  <ul>
+    <li>
+      <img src="assets/images/oignons.jpg" alt="photo d'oignons">200g d'oignon émincés
+    </li>
+    <li>
+      <img src="assets/images/reblochon.webp" alt="photo de reblochon">1 reblochon 
+    </li>
+    <li>
+      <img src="assets/images/huile.png" alt="photo d'huile">2 cuilleres a soupe d'huile
+    </li>
+    <li>
+      <img src="assets/images/pomme_de_terre.webp" alt="photo de pomme de terre">1 kg de pommes de terre
+    </li>
+    <li>
+      <img src="assets/images/lardons.webp" alt="photo de lardons">200 g de lardons fumés
+    </li>
+        <li>
+      <img src="assets/images/ail.webp" alt="photo d'ail">1 gousse d'ail
+    </li>
+    <li>
+      <img src="assets/images/poivre.webp" alt="photo de poivre">Poivre
+    </li>
+    <li>
+      <img src="assets/images/sel.webp" alt="photo de sel">Sel
+  </ul>
+</section>
+ <section aria-labelledby="titrePreparation"></section>
+        <h3>Préparation :</h3>
+        <ol id="etape">
+            <li class="etapes">Eplucher les pommes de terre, les couper en dés, bien les rincer et les essuyer dans un torchon propre.</li>
+            <li class="etapes">Faire chauffer l'huile dans une poêle, y faire fondre les oignons.</li>
+            <li class="etapes">Lorsque les oignons sont fondus, ajouter les pommes de terre et les faire dorer de tous les côtés.</li>
+            <li class="etapes">Lorsqu'elles sont dorées, ajouter les lardons et finir de cuire. Éponger le surplus de gras avec une feuille de papier essuie-tout.</li>
+            <li class="etapes">D'autre part, gratter la croûte du reblochon et le couper en deux (ou en quatre).</li>
+            <li class="etapes">Préchauffer le four à 200°C (thermostat 6-7) et préparer un plat à gratin en frottant le fond et les bords avec la gousse d'ail épluchée.</li>
+            <li class="etapes">Dans le plat à gratin, étaler une couche de pommes de terre aux lardons, disposer dessus la moitié du reblochon, puis de nouveau des pommes de terre. Terminer avec le reste du reblochon (croûte vers les pommes de terre).</li>
+            <li class="etapes">Enfourner pour environ 20 minutes de cuisson.</li>
+        </ol>
+        </section>
+        <section id="similaires" aria-labelledby="titreSimilaires">
+        <h3>Recettes similaires</h3>
+        <ul>
+            <li>Gratin savoyard</li>
+            <li>Raclette</li>
+            <li>Gratin dauphinois</li>
+        </ul>
+        </section>
+        </article>
+    </main>
+
+    <footer id="piedDePage">      
+        <p>© 2025 GourmeTech - Tous droits réservés.</p>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>
