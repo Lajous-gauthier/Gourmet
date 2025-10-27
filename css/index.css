@@ -283,6 +283,10 @@ input,textarea{
     max-width: 100%;
   }
 
+#logo{
+  width: 10rem;
+}
+
   #cartes {
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     margin: 1rem;
@@ -344,6 +348,10 @@ input,textarea{
     font-size: 1.2rem;
     width: 20%;
   }
+
+#logo{
+  width: 7rem;
+}
 
   #menuToggle {
     display: block;

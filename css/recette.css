@@ -297,6 +297,10 @@ footer {
     gap: 0.8rem;
   }
 
+  #logo{
+  width: 10rem;
+}
+
   #etape li {
     font-size: 0.95rem;
   }
@@ -324,10 +328,6 @@ footer {
   header {
     padding: 0.5rem 1rem;
     z-index: 105;
-  }
-
-  #logo {
-    width: 10rem;
   }
 
   header nav {
@@ -406,6 +406,10 @@ footer {
     height: auto;
     padding: 1rem;
   }
+
+  #logo{
+  width: 7rem;
+}
   
   #menuToggle {
     display: block;
