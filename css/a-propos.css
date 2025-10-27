@@ -316,21 +316,15 @@ footer {
     gap: 0.5rem;
   }
 
-  header img {
-    height: 45px;
-  }
-
   header nav {
     gap: 1rem;
     flex: 1;
     justify-content: center;
   }
-
   
   #logo{
-    width: 5rem;
+    width: 10rem;
   }
-
 
   .theme-toggle {
     font-size: 1.6rem;
@@ -381,16 +375,16 @@ footer {
     padding: 0.8rem 1rem;
   }
 
-  header img {
-    height: 40px;
-  }
-
   header nav {
     font-size: 0.8rem;
   }
 
   header nav a {
     font-size: 0.9rem;
+  }
+
+   #logo {
+    width: 7rem;
   }
 
   .theme-toggle {
