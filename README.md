@@ -32,6 +32,63 @@ Le projet a pour objectif de proposer une plateforme **simple, moderne et access
 
 ---
 
+## 📁 Structure du Projet
+
+```
+GOURMET/
+│
+├── index.html
+├── cheesecake.html
+├── tartiflette.html
+├── gateauxChocolat.html
+├── random.html
+├── favoris.html
+├── a-propos.html
+│
+├── css/
+│   ├── index.css
+│   ├── recette.css
+│   ├── random.css
+│   ├── favorite.css
+│   └── a-propos.css
+│
+├── js/
+│   ├── script.js
+│   ├── filtres.js
+│   ├── generate.js
+│   ├── favoris.js
+│   └── messageForm.js
+│
+├── assets/images/
+│   ├── ail.webp
+│   ├── aneth.jpeg
+│   ├── beurre.webp
+│   ├── cheesecake.webp
+│   ├── chocolat.webp
+│   ├── citron.png
+│   ├── crackers-sales.jpg
+│   ├── creme_liquide.jpeg
+│   ├── farine.webp
+│   ├── gateau_chocolat.jpg
+│   ├── huile.png
+│   ├── lardons.webp
+│   ├── logo_gourmetech.jpg
+│   ├── oeuf.webp
+│   ├── oignons.webp
+│   ├── poivres.webp
+│   ├── pomme_de_terre.webp
+│   ├── reblochon.webp
+│   ├── sel.webp
+│   ├── sucre.png
+│   ├── TARTIFLETTE.jpg
+│   └── truites.jpg
+│
+└── README.md
+
+```
+
+---
+
 ## ✨ Fonctionnalités
 
 - 📖 **Catalogue de recettes** – Parcourez une collection variée de plats  
