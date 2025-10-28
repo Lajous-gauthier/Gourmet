@@ -102,6 +102,8 @@ GOURMET/
 - 📜 **Formulaire de contact** – Données stockées dans le `localStorage`  
 - 📱 **Interface responsive** – Adaptée à tous les écrans  
 - ♿ **Accessibilité** – Respect des bonnes pratiques web
+- ⭐ **Système de Notation**- Accorder une a cinq etoiles à vos recettes
+- 🖼️ **Caroussel Recettes** - 3 photos sur chaque recettes
 
 ---
 
