@@ -118,21 +118,17 @@ h2, h3 {
   margin-bottom: 2rem;
 }
 
-/* Image principale + favoris */
 .imageEtFav {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 360px; 
   overflow: hidden;
   border-radius: 1rem;
   box-shadow: 0 2px 6px var(--shadow-color);
   margin-bottom: 1.5rem;
-}
-
-.imageEtFav img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
 }
 
 .imageEtFav .material-symbols-outlined {
@@ -143,42 +139,86 @@ h2, h3 {
   font-size: 2rem;
   color: var(--orange);
   transition: transform 0.2s;
+  z-index: 10;
 }
 
 .imageEtFav .material-symbols-outlined:hover {
   transform: scale(1.2);
 }
 
-#caroussel{
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 70%;
-  gap: 2rem;
-  overflow-x: auto;
-  scroll-snap-type: mandatory;
+
+#caroussel { 
+  position: relative; 
+  width: 100%; 
+  height: 100%; 
 }
-figure{
-  margin: 0;
-  scroll-snap-align: center;
+
+#caroussel input[type="radio"]{
+  display: none;
+}
+
+#caroussel .slides {
+  display: flex; 
+  width: 300%; 
+  height: 100%; 
+  transition: transform 0.6s ease-in-out;
+  flex-wrap: nowrap;
+}
+
+#caroussel figure {
+  width: 100%; 
+  height: 100%;
   position: relative;
-
+  margin: 0;
+  flex-shrink: 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-&::scroll-button(*){
-  background-color: rgb(255,255, 255);
+#caroussel figcaption {
+  display: none;
+}
+
+#caroussel img {
+  width: 100%; 
+  height: 500px; 
+  object-fit: cover; 
+  border-radius: 0; 
+}
+
+#img1:checked ~ .slides { transform: translateX(0); }       
+#img2:checked ~ .slides { transform: translateX(-100%); } 
+#img3:checked ~ .slides { transform: translateX(-200%); }  
+
+
+#caroussel .controls {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%); 
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  z-index: 10; 
 }
 
-&::scroll-button(right){
-  content: ">";
-  right: 20px;
+#caroussel .dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5); 
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  border: 2px solid rgba(255, 255, 255, 0.8);
 }
 
-minute 14 video 
-
-/* Infos (catégorie, temps, niveau) */
+#img1:checked ~ .controls label[for="img1"],
+#img2:checked ~ .controls label[for="img2"],
+#img3:checked ~ .controls label[for="img3"] {
+  background-color: var(--orange); 
+  transform: scale(1.2); 
+}
 .infos {
   display: flex;
   justify-content: space-between;
