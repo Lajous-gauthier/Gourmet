@@ -6,6 +6,8 @@
     <title>Recettes - GourmeTech</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="stylesheet" href="css/recette.css">
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+
 </head>
 <body>
     <header>
@@ -32,11 +34,20 @@
           <img src="assets/images/cheesecake.webp" alt="photo d'une Entrées Cheesecake au chèvre frais et à la truite fumée" />
           </div>
 
-           <div class="infos">
-            <span class="categorie">Dessert </span>
-            <span class="time">45 min </span>
-            <span class="niveau">Facile </span>
+       <section class="infos">
+
+           <div>
+            <span id="categorie">Entrées </span>
+            <span id="time">45 min </span>
+            <span id="niveau">difficile</span>
           </div>
+
+          <div class="stars">
+          <i class="lar la-star" data-value="1"></i><i class="lar la-star" data-value="2"></i><i class="lar la-star" data-value="3"></i><i class="lar la-star" data-value="4"></i><i class="lar la-star" data-value="5"></i>
+          </div>
+          <input type="hidden" name="note" id="note" value="0">
+          </section>
+
 
 <section id="ingredients" aria-labelledby="titreIngredients">
   <h3>Liste des ingrédients :</h3>
