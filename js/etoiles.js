@@ -1,33 +1,42 @@
 window.onload = () => {
+  const stars = document.querySelectorAll(".la-star");
 
-const stars = document.querySelectorAll(".la-star")
+  const note = document.querySelector("#note");
 
-const note = document.querySelector("#note")
+  for (star of stars) {
+    star.addEventListener("mouseover", function () {
+      resetStars();
+      this.style.color = "red";
+      this.classList.add("las");
+      this.classList.remove("lar");
+      let previousStar = this.previousElementSibling;
 
-for (star of stars) {
-    star.addEventListener("mouseover", function(){
-       resetStars()
-        this.style.color = "red"
+      while (previousStar) {
+        previousStar.style.color = "red";
+        previousStar.classList.add("las");
+        previousStar.classList.remove("lar");
+        previousStar = previousStar.previousElementSibling;
+      }
+    });
+    star.addEventListener("click", function () {
+      note.value = this.dataset.value;
+    });
+    star.addEventListener("mouseover", function () {
+      resetStars(note.value);
+    });
+  }
 
-        let previousStar = this.previousElementSibling
-
-        while(previousStar){
-            previousStar.style.color = "red"
-            previousStar = previousStar.previousElementSibling
-
-        }
-    })
-    star.addEventListener("click" , function(){
-        note.value = this.dataset.value
-    })
-
-}
-
-function resetStars(){
-    for(star of stars){
-        star.style.color = "black"
-    }}
-}
-
-
-Video.time = 26 min 
+  function resetStars(note = 0) {
+    for (star of stars) {
+      if (star.dataset.value > note) {
+        star.style.color = "black";
+        star.classList.add("las");
+        star.classList.remove("lar");
+      } else {
+        star.style.color = "red";
+        star.classList.add("lar");
+        star.classList.remove("las");
+      }
+    }
+  }
+};
