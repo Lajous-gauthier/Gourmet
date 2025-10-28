@@ -1,7 +1,16 @@
+let ratingStorage = {};
+
 window.onload = () => {
   const stars = document.querySelectorAll(".la-star");
-
   const note = document.querySelector("#note");
+
+   const ratingId = note.dataset.id || 'default'; 
+ 
+  const savedRating = getRating(ratingId);
+  if (savedRating) {
+    note.value = savedRating;
+    resetStars(savedRating);
+  }
 
   for (star of stars) {
     star.addEventListener("mouseover", function () {
@@ -18,8 +27,11 @@ window.onload = () => {
         previousStar = previousStar.previousElementSibling;
       }
     });
+    
     star.addEventListener("click", function () {
       note.value = this.dataset.value;
+     
+      saveRating(ratingId, this.dataset.value);
     });
 
     star.addEventListener("mouseout", function () {
@@ -39,5 +51,14 @@ window.onload = () => {
         star.classList.remove("lar");
       }
     }
+  }
+
+
+  function saveRating(id, rating) {
+    localStorage.setItem('userRating_' + id, rating);
+  }
+
+  function getRating(id) {
+    return localStorage.getItem('userRating_' + id);
   }
 };
