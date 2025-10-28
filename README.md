@@ -55,6 +55,7 @@ GOURMET/
 ├── js/
 │   ├── script.js
 │   ├── filtres.js
+│   ├── etoiles.js
 │   ├── generate.js
 │   ├── favoris.js
 │   └── messageForm.js
