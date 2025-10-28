@@ -151,22 +151,27 @@ h2, h3 {
 /* Infos (catégorie, temps, niveau) */
 .infos {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 1rem;
   margin-bottom: 3rem;
   font-weight: bold;
 }
 
-.categorie, .time, .niveau {
+#categorie, #time, #niveau {
   padding: 0.4rem 0.8rem;
   border-radius: 10%;
   color: #fff;
   font-size: 0.95rem;
+  margin-right: 2rem;
 }
 
-.categorie { background-color: rgb(55, 140, 161); }
-.time { background-color: rgb(93, 182, 93); }
-.niveau { background-color: rgb(206, 130, 206); }
+.la-star{
+  font-size: x-large;
+}
+
+#categorie { background-color: rgb(55, 140, 161); }
+#time { background-color: rgb(93, 182, 93); }
+#niveau { background-color: rgb(206, 130, 206); }
 
 /* ==== INGREDIENTS ==== */
 #ingredients {

@@ -6,13 +6,13 @@ window.onload = () => {
   for (star of stars) {
     star.addEventListener("mouseover", function () {
       resetStars();
-      this.style.color = "red";
+      this.style.color = "#e06b1a";
       this.classList.add("las");
       this.classList.remove("lar");
       let previousStar = this.previousElementSibling;
 
       while (previousStar) {
-        previousStar.style.color = "red";
+        previousStar.style.color = "#e06b1a";
         previousStar.classList.add("las");
         previousStar.classList.remove("lar");
         previousStar = previousStar.previousElementSibling;
@@ -21,7 +21,8 @@ window.onload = () => {
     star.addEventListener("click", function () {
       note.value = this.dataset.value;
     });
-    star.addEventListener("mouseover", function () {
+
+    star.addEventListener("mouseout", function () {
       resetStars(note.value);
     });
   }
@@ -29,13 +30,13 @@ window.onload = () => {
   function resetStars(note = 0) {
     for (star of stars) {
       if (star.dataset.value > note) {
-        star.style.color = "black";
-        star.classList.add("las");
-        star.classList.remove("lar");
-      } else {
-        star.style.color = "red";
+        star.style.color = "#888"
         star.classList.add("lar");
         star.classList.remove("las");
+      } else {
+        star.style.color = "#e06b1a";
+        star.classList.add("las");
+        star.classList.remove("lar");
       }
     }
   }
