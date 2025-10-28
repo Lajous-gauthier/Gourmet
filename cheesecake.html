@@ -1,121 +1,145 @@
 <!DOCTYPE html>
 <html lang="fr" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recettes - GourmeTech</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link rel="stylesheet" href="css/recette.css">
-    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recettes - GourmeTech</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <link rel="stylesheet" href="css/recette.css">
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
 </head>
+
 <body>
-    <header>
-      <img src="assets/images/logo_gourmetech.jpg" alt="logo gourmeTech" id="logo"/>
-      <button id="menuToggle" class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+  <header>
+    <img src="assets/images/logo_gourmetech.jpg" alt="logo gourmeTech" id="logo" />
+    <button id="menuToggle" class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
 
-    <span class="sr-only"></span>
-    &#9776;
-  </button>
-      <nav id="navLinks">
-        <a href="index.html">Accueil</a>
-        <a href="random.html">Recette Aléatoire</a>
-        <a href="favoris.html">Mes favoris</a>
-        <a href="a-propos.html">À propos</a>
-      </nav>
-      <button class="material-symbols-outlined" id="themeToggle" aria-label="Basculer le mode clair/sombre" aria-pressed="false">dark_mode</button>
-    </header>
-    <main>
-        <article class="recette" aria-labelledby="titreRecette">
+      <span class="sr-only"></span>
+      &#9776;
+    </button>
+    <nav id="navLinks">
+      <a href="index.html">Accueil</a>
+      <a href="random.html">Recette Aléatoire</a>
+      <a href="favoris.html">Mes favoris</a>
+      <a href="a-propos.html">À propos</a>
+    </nav>
+    <button class="material-symbols-outlined" id="themeToggle" aria-label="Basculer le mode clair/sombre"
+      aria-pressed="false">dark_mode</button>
+  </header>
+  <main>
+    <article class="recette" aria-labelledby="titreRecette">
 
-        <h1>GourmeTech</h1>
-        <h2>Cheesecake au chèvre frais et à la truite fumée</h2>
-       <div class="imageEtFav"  id="caroussel">
+      <h1>GourmeTech</h1>
+      <h2>Cheesecake au chèvre frais et à la truite fumée</h2>
+      <div class="imageEtFav" id="caroussel">
+
+         <input type="radio" name="caroussel" id="img1" checked>
+         <input type="radio" name="caroussel" id="img2">
+         <input type="radio" name="caroussel" id="img3">
+         <div class="slides">
         <figure>
           <img src="assets/images/cheesecake.webp" alt="photo d'une Entrées Cheesecake au chèvre frais et à la truite fumée" />
           <figcaption>image1</figcaption>
         </figure>
-           <figure>
+        <figure>
           <img src="assets/images/cheesecake2.jpeg" alt="photo d'une Entrées Cheesecake au chèvre frais et à la truite fumée" />
           <figcaption>image2</figcaption>
         </figure>
-           <figure>
+        <figure>
           <img src="assets/images/cheesecake3.jpeg" alt="photo d'une Entrées Cheesecake au chèvre frais et à la truite fumée" />
           <figcaption>image3</figcaption>
         </figure>
-          </div>
+      </div>
 
-       <section class="infos">
+      <div class="controls">
 
-           <div>
-            <span id="categorie">Entrées </span>
-            <span id="time">45 min </span>
-            <span id="niveau">difficile</span>
-          </div>
+              <label for="img1" class="dot"></label>
+              <label for="img2" class="dot"></label>
+              <label for="img3" class="dot"></label>
+           </div>
+          
+        </div>
 
-          <div class="stars">
-          <i class="lar la-star" data-value="1"></i><i class="lar la-star" data-value="2"></i><i class="lar la-star" data-value="3"></i><i class="lar la-star" data-value="4"></i><i class="lar la-star" data-value="5"></i>
-          </div>
-          <input type="hidden" name="note" id="note" value="0" data-id="plat-3">
-          </section>
+      <section class="infos">
+
+        <div>
+          <span id="categorie">Entrées </span>
+          <span id="time">45 min </span>
+          <span id="niveau">difficile</span>
+        </div>
+
+        <div class="stars">
+          <i class="lar la-star" data-value="1"></i><i class="lar la-star" data-value="2"></i><i class="lar la-star"
+            data-value="3"></i><i class="lar la-star" data-value="4"></i><i class="lar la-star" data-value="5"></i>
+        </div>
+        <input type="hidden" name="note" id="note" value="0" data-id="plat-3">
+      </section>
 
 
-<section id="ingredients" aria-labelledby="titreIngredients">
-  <h3>Liste des ingrédients :</h3>
-  <ul>
-    <li>
-      <img src="assets/images/buchette.jpeg" alt="photo de Buchette">2 Buchette de chèvre frais
-    </li>
-    <li>
-      <img src="assets/images/crackers_sales.jpg" alt="photo de crackers">100g de crackers salés 
-    </li>
-    <li>
-      <img src="assets/images/beurre.webp" alt="photo de beurre">50g de beurre mou
-    </li>
-    <li>
-      <img src="assets/images/creme_liquide.jpeg" alt="photo de creme liquide">20 cl de crème liquide entière
-    </li>
-    <li>
-      <img src="assets/images/aneth.jpeg" alt="photo d'aneth">1 bouquet d’aneth
-    </li>
-    <li>
-      <img src="assets/images/truite.jpg" alt="photo de truite fumée">4 tranches de truite fumée
-    </li>
-    <li>
-      <img src="assets/images/citron.png" alt="photo de citron">1/2 citron
-    </li>
-    <li>
-      <img src="assets/images/poivre.webp" alt="photo de poivre">Poivre
-    </li>
-  </ul>
+      <section id="ingredients" aria-labelledby="titreIngredients">
+        <h3>Liste des ingrédients :</h3>
+        <ul>
+          <li>
+            <img src="assets/images/buchette.jpeg" alt="photo de Buchette">2 Buchette de chèvre frais
+          </li>
+          <li>
+            <img src="assets/images/crackers_sales.jpg" alt="photo de crackers">100g de crackers salés
+          </li>
+          <li>
+            <img src="assets/images/beurre.webp" alt="photo de beurre">50g de beurre mou
+          </li>
+          <li>
+            <img src="assets/images/creme_liquide.jpeg" alt="photo de creme liquide">20 cl de crème liquide entière
+          </li>
+          <li>
+            <img src="assets/images/aneth.jpeg" alt="photo d'aneth">1 bouquet d’aneth
+          </li>
+          <li>
+            <img src="assets/images/truite.jpg" alt="photo de truite fumée">4 tranches de truite fumée
+          </li>
+          <li>
+            <img src="assets/images/citron.png" alt="photo de citron">1/2 citron
+          </li>
+          <li>
+            <img src="assets/images/poivre.webp" alt="photo de poivre">Poivre
+          </li>
+        </ul>
 
-</section>
+      </section>
 
-    <section aria-labelledby="titrePreparation">
-            <h3>Préparation :</h3>
-            <ol id="etape">
-                <li class="etapes">Mixez les crackers et mélangez-les avec le beurre.</li>
-                <li class="etapes">Chemisez 4 cercles de présentation d’une feuille de rhodoïd et déposez une couche de préparation aux crackers en tassant bien.</li>
-                <li class="etapes">Montez la crème liquide au fouet pour obtenir une crème fouettée et mélangez délicatement avec le chèvre doux et frais écrasé, deux tranches de truite fumée coupées en petits dés, du poivre et l’aneth ciselée (réservez quelques branches pour le dressage).</li>
-                <li class="etapes">Placez la préparation sur la base aux crackers et réservez au frais pendant 12 heures.</li>
-                <li class="etapes">Démoulez les cheesecakes et disposez dessus une demi-tranche de truite fumée. Ajoutez une branche d’aneth, un filet de jus de citron et quelques zestes.</li>
-            </ol>
-    </section>
-        <section id="similaires" aria-labelledby="titreSimilaires">
+      <section aria-labelledby="titrePreparation">
+        <h3>Préparation :</h3>
+        <ol id="etape">
+          <li class="etapes">Mixez les crackers et mélangez-les avec le beurre.</li>
+          <li class="etapes">Chemisez 4 cercles de présentation d’une feuille de rhodoïd et déposez une couche de
+            préparation aux crackers en tassant bien.</li>
+          <li class="etapes">Montez la crème liquide au fouet pour obtenir une crème fouettée et mélangez délicatement
+            avec le chèvre doux et frais écrasé, deux tranches de truite fumée coupées en petits dés, du poivre et
+            l’aneth ciselée (réservez quelques branches pour le dressage).</li>
+          <li class="etapes">Placez la préparation sur la base aux crackers et réservez au frais pendant 12 heures.</li>
+          <li class="etapes">Démoulez les cheesecakes et disposez dessus une demi-tranche de truite fumée. Ajoutez une
+            branche d’aneth, un filet de jus de citron et quelques zestes.</li>
+        </ol>
+      </section>
+      <section id="similaires" aria-labelledby="titreSimilaires">
         <h3>Recettes similaires</h3>
         <ul>
-            <li>Quiche à la patate douce et au chèvre</li>
-            <li>Pizza chèvre miel</li>
-            <li>Tartines aux légumes confits et chèvre</li>
+          <li>Quiche à la patate douce et au chèvre</li>
+          <li>Pizza chèvre miel</li>
+          <li>Tartines aux légumes confits et chèvre</li>
         </ul>
-        </section>
-        </article>
-    </main>
+      </section>
+    </article>
+  </main>
 
-    <footer id="piedDePage">      
-        <p>© 2025 GourmeTech - Tous droits réservés.</p>
-    </footer>
-    <script src="js/script.js"></script>
-    <script src="js/etoiles.js"></script>
+  <footer id="piedDePage">
+    <p>© 2025 GourmeTech - Tous droits réservés.</p>
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="js/etoiles.js"></script>
 </body>
+
 </html>
